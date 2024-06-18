@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="commanStyle.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="meadiaquerry.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left"><b>Abhishek's Portfolio</b></div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <div class="home-left libre-baskerville-regular-italic">
+                <h1>Welcome to My Portfolio</h1>
+
+                <h1>Hello! I'm <span id="element" class="purple"></span>, <br>a passionate web developer<br>I strive to deliver high-quality work<br> that meets both aesthetic and functional standards.</h1>
+            </div>
+            <div class="home-right">
+                <img id="profile_image" src="profile.gif" alt="Professional Photo">
+            </div>
+        </section>
+
+        <div class="skill-super-box">
+            <div class="skill-left-box">
+                <img id="skill-tree-image" src="https://iili.io/dHHfskl.md.png" alt="skill image">
+            </div>
+            <section id="skills">
+                <h2 id="skills-heading">Skills</h2>
+                <div class="frame">
+                    <div class="skill-box" id="c">
+                        <img class="skill-image" src="https://i.ibb.co/dMFsGRT/c1.png" alt="c language">
+                        <label for="c"><b>C</b></label>
+                    </div>
+
+                    <div class="skill-box" id="python">
+                        <img class="skill-image" src="https://iili.io/dHHKyRp.md.png" alt="python language">
+                        <label for="python"><b>Python</b></label>
+                    </div>
+                    <div class="skill-box" id="dsa">
+                        <img class="skill-image" src="https://iili.io/dHHqGyl.md.png" alt="dsa">
+                        <label for="dsa"><b>DSA</b></label>
+                    </div>
+                </div>
+                <div class="frame" id="frame-second-row">
+                    <div class="skill-box" id="html">
+                        <img class="skill-image" src="https://iili.io/dHHB7AQ.md.png" alt="html">
+                        <label for="html"><b>HTML</b></label>
+                    </div>
+                    <div class="skill-box" id="css">
+                        <img class="skill-image" src="https://iili.io/dHHBwDN.md.png" alt="css">
+                        <label for="css"><b>CSS</b></label>
+                    </div>
+                    <div class="skill-box" id="javascript">
+                        <img class="skill-image" src="https://iili.io/dHHBPb2.md.png" alt="js">
+                        <label for="javascript"><b>JavaScript</b></label>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <section id="projects">
+            <h2>Recent Projects</h2>
+            <div class="project-shelf">
+                <div class="project">
+                    <div class="project-image-box"><img src="https://iili.io/dHHCCdJ.png" alt="Project 1">
+                    </div>
+                    <div class="project-doc-box libre-baskerville-regular">
+                        <p>It is a basic calculator where you can perform addition, subtraction, division and modulo of
+                            numbers.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://6abhishek.github.io/CALCULATOR/">Live Demo</a>
+                        <a href="https://github.com/6Abhishek/CALCULATOR">Github Link</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image-box"><img src="https://iili.io/dHHCvIV.png" alt="Project 2">
+                    </div>
+                    <div class="project-doc-box libre-baskerville-regular">
+                        <p>It is a temperature converter where you can convert temperature among
+                            celcious, faherenhait and kelvin.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href=" https://6abhishek.github.io/Temperature_converter-/">Live Demo</a>
+                        <a href="https://github.com/6Abhishek/Temperature_converter-">Github Link</a>
+                    </div>
+                </div>
+                <!-- Add more projects similarly -->
+            </div>
+        </section>
+
+        <section id="contact-section">
+            <div class="contact-heading">
+                <h2>Contact Me</h2>
+            </div>
+            <div id="contact">
+                <div class="contact-left">
+                    <img src="https://iili.io/dHHnn4e.md.png" alt="email_icon" class="email_icon">
+                </div>
+                <div id="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="04d9c11b-ffa6-4443-af5b-9f6955ab0b30">
+
+                        <input type="text" id="name" class="contact-input" name="name" placeholder="Name" required>
+
+                        <input type="email" id="email" class="contact-input" name="email" placeholder="Email" required>
+
+                        <textarea id="message" class="contact-input" name="message" placeholder="Message"
+                            required></textarea>
+
+                        <br>
+                        <button type="submit" id="submit-button">Send</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Abhishek Kumar. All rights reserved.</p>
+    </footer>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Abhishek Kumar'],
+            showCursor: false,
+            typeSpeed: 70,
+        });
+    </script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

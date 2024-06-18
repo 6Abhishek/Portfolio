@@ -1,0 +1,257 @@
+/* styles.css */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    font-family: Arial, sans-serif;
+    color:white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    padding: 2px;
+}
+
+nav{
+    background: rgb(32, 24, 85);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    box-shadow: 5px 4px 5px rgb(213, 99, 241);
+}
+
+.nav-left{
+    margin-left: 3rem;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background: #45479c;
+}
+     
+main {
+    padding: 1rem;
+}
+#home{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    box-shadow: 2px 3px 5px #AF47D2;
+}
+.home-left{
+    margin: 5rem 7rem 5rem 10%;
+    font-size: 20px;
+}
+.home-right{
+    margin-top: 50px;
+    margin-right: 10%;
+}
+
+#profile_image{
+    border-radius: 10%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 5px #053611;
+
+}
+
+/* skilllss */
+
+h2{
+    background-image: linear-gradient(60deg,#AF47D2,rgb(219, 219, 204));
+    background-clip: text;
+    color: transparent;
+}
+.skill-super-box{
+    box-shadow: 2px 3px 5px #AF47D2;
+    padding: 1rem 3rem 1rem 1rem;
+    margin-top: 5rem;
+}
+.skill-left-box{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    margin-top: 5rem;
+}
+#skill-tree-image{
+    height: 300px;
+    width: 300px;
+    display: block;
+}
+
+#skills{
+    display: grid;
+    align-items: center;
+}
+#skills h2{
+    align-items: center;
+    margin-left: 50%;
+}
+
+.frame{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18rem;
+}
+
+.skill-box{
+    height: 150px;
+    width: 150px;
+    margin-top: 2rem;
+    border-radius: 5%;
+    border: slateblue solid 2px;
+    box-shadow: 3px 2px 5px #AF47D2 ;
+}
+
+#frame-second-row{
+    margin-top: 1rem;
+}
+.skill-image{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+#about{
+    margin: 4rem 1rem 0px 5%;
+}
+
+
+/* project section */
+#projects{
+    display: grid;
+    margin: 5rem 0rem 0rem 0rem ;
+    box-shadow: 3px 2px 5px #AF47D2 ;
+}
+
+#projects h2{
+    margin-left: 40%;
+    margin-top: 2rem;
+}
+
+.project-shelf {
+    display: flex;
+    flex-wrap: wrap;
+     gap: 1rem;
+    justify-content: space-around;
+    margin: 2rem 8rem 2rem 8rem;
+}
+
+.project {
+    display: flex;
+     padding: 5px;
+    height: 250px;
+    width: 450px;
+    border: slateblue solid 2px;
+    box-shadow: 3px 2px 5px #AF47D2 ;
+}
+
+.project img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/* contact section */
+#contact-section{
+    margin-top: 5rem;
+    box-shadow: 3px 2px 5px #AF47D2 ;
+}
+.contact-heading h2{
+    font-weight: 600;
+    font-size: 40px;
+    margin: 0px 0px 5px 40%;
+    padding-top: 50px;
+}
+
+#contact{
+    display: flex;
+}
+
+.contact-left{
+    width: 40%; 
+}
+
+.email_icon{
+    height: 500px;
+    width: 500px;
+    margin-top: 10px;
+}
+
+#contact-form{
+    display: grid;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-left: 200px;
+}
+
+.contact-input{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+.contact-input:focus{
+    border: 2px solid #ff994f;
+}
+
+.contact-input::placeholder{
+    color: #252222;
+}
+
+#contact-form #message{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+#submit-button{
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    background-color: #AF47D2;
+    background: linear-gradient(60deg,rgb(90, 205, 105) solid,#AF47D2);
+}
+
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
